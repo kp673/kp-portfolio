@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" integrity="sha512-3J8teBiHrSyaaRBajZyIEtpDsXdPq1gsznKWIVb5CnorQuFhjWGhWe54z8YNnHHr7MZuExb9m5kvf964HiT1Sw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 
 <body>
@@ -19,12 +20,12 @@
         <div class='max-width'>
             <div class="logo"><a href="#">Kush<span>Patel.</span></a></div>
             <ul class="menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Experience</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#home" class="menu-btn">Home</a></li>
+                <li><a href="#about" class="menu-btn">About</a></li>
+                <li><a href="#projects" class="menu-btn">Projects</a></li>
+                <li><a href="#skills" class="menu-btn">Skills</a></li>
+                <li><a href="#" class="menu-btn">Experience</a></li>
+                <li><a href="#contact" class="menu-btn">Contact</a></li>
             </ul>
             <div class="menu-btn">
                 <i class="fas fa-bars"></i>
@@ -39,7 +40,7 @@
             <div class="home-content">
                 <div class="text-1">Hello, this is</div>
                 <div class="text-2">Kush Patel</div>
-                <div class="text-3">And I'm a <span>Student</span></div>
+                <div class="text-3">And I'm <span class="typing"></span></div>
                 <a href="main-resume.pdf" hreflang="en" target="_blank">Resume</a>
             </div>
         </div>
@@ -178,6 +179,85 @@
         </div>
         </div>
     </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="max-width">
+            <h2 class="title">Contact Me</h2>
+            <div class="contact-content">
+                <div class="column left">
+                    <div class="text">
+                        Contact Details
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem esse molestias rerum repellat iste saepe a itaque quo modi enim nam sed odit, at in, officia minus laudantium consectetur eaque?</p>
+                    <div class="icons">
+                        <div class="row">
+                            <i class="fas fa-user"></i>
+                            <div class="info">
+                                <div class="head">Name</div>
+                                <div class="sub">Kush Patel</div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="info">
+                                <div class="head">Location</div>
+                                <div class="sub">Edison, New Jersey</div>
+                            </div>
+                        </div>
+                        <div class="row">
+
+                            <i class="fas fa-envelope"></i>
+                            <div class="info">
+                                <div class="head">Mail</div>
+                                <a href="mailto:kush161100@gmail.com">
+                                    <div class="sub">kush161100@gmail.com</div>
+                                </a>
+                            </div>
+                            <!-- </a> -->
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-phone"></i>
+                            <div class="info">
+                                <div class="head">Number</div>
+                                <div class="sub">+1 (218) 513-6493</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column right">
+                    <div class="text">Message Me</div>
+                    <form action="#" method="post">
+                        <div class="fields">
+                            <div class="field name">
+                                <input type="text" placeholder="Name" required>
+                            </div>
+                            <div class="field email">
+                                <input type="email" placeholder="Email" required>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <input type="text" placeholder="Subject">
+                        </div>
+                        <div class="field textarea">
+                            <textarea cols="30" rows="10" name="message" placeholder="Message" required></textarea>
+                        </div>
+                        <div class="button">
+                            <button type="submit">Send(Work in Progress)</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <span>Created By <a href="#">Kush Patel</a> | <span class="far fa-copyright">2021 All rights reserved. </span></span>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 

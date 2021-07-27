@@ -11,4 +11,12 @@ $(document).ready(function() {
         $(`.navbar .menu`).toggleClass("active");
         $(`.menu-btn i`).toggleClass("active");
     });
+
+    // typing
+    var typed = new Typed(".typing", {
+        strings: ["a Student", " an Android Developer", "a Web Developer", "a Teacher", "an UI/UX Engineer"],
+        typeSpeed: 100,
+        backSpeed: 60,
+        loop: true
+    });
 });
