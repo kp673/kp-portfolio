@@ -92,12 +92,21 @@ html {
 
 .home {
     display: flex;
-    background: url("images/banner (1).jpg") no-repeat center;
+    background: url("images/banner (1).jpg");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 100vh;
     color: white;
     min-height: 500px;
     font-family: "Grandstander", cursive;
 }
+
+/* .parallax {
+   
+} */
 
 .home .max-width {
     margin: auto auto auto auto;
