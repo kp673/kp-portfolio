@@ -569,7 +569,12 @@ footer span a:hover {
 
 
 /* responsive media query start */
-
+/* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
+@media only screen and (max-device-width: 690px) {
+  .parallax {
+    background-attachment: scroll;
+  }
+}
 @media(max-width:1200px) {
     .home .max-width {
         margin-left: 0px;
