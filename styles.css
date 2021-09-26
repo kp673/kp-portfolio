@@ -160,6 +160,7 @@ section {
 .about,
 .projects,
 .skills,
+.experience,
 .contact,
 .footer {
     font-family: 'montserrat', sans-serif;
@@ -277,16 +278,18 @@ a:hover {
 
 /* projects styling  */
 
-.projects {
+.projects, .experience{
     color: white;
     background: #111;
 }
 
-.projects .title::before {
+.projects .title::before, 
+.experience .title::before {
     background: white;
 }
 
-.projects .title::after {
+.projects .title::after,
+.experience .title::after {
     color: goldenrod;
     background: #111;
     content: "My work";
@@ -436,6 +439,73 @@ a:hover {
 .skills .skills-content .jenkins::before {
     width: 75%;
 }
+
+/* experience styling */
+.experience .title::before{
+    width: 250px;
+}
+.experience .title::after{
+    content: "Where Have I Worked";
+}
+
+.experience .carousel .card{
+    background: #222;
+    border-radius: 6px;
+    padding: 25px 35px;
+    text-align: center;
+    transition: all 0.5s ease;
+}
+
+.experience .carousel .card:hover{
+    background: #051094;
+}
+
+.experience .carousel .card .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.experience .carousel .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin : 10px 0 7px 0;
+}
+.experience .carousel .card img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid goldenrod;
+    transition: all 0.5s ease;
+}
+.experience .carousel .card:hover img{
+    border-color: #fff;
+}
+.owl-dots{
+    text-align: center;
+    margin-top: 10px;
+}
+.owl-dot{
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none !important;
+    border-radius: 50%;
+    border: 2px solid goldenrod !important;
+    transition: all 0.5s ease;
+}
+.owl-dot.active{
+    width: 35px;
+    border-radius: 14px;
+}
+.owl-dot.active,
+.owl-dot:hover{
+    background: goldenrod !important;
+
+}
+
 
 
 /* contact style */
